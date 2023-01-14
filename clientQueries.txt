@@ -1,0 +1,49 @@
+---------------------------
+query getAllUsers{
+  users{
+    id
+    firstName
+    lastName
+    password
+  }
+}
+---------------------------
+query getUserById($userid:ID!){
+  user(id: $userid){
+    id
+    firstName
+    lastName
+    email
+  }
+}
+----------------------------
+query getTaskById($taskid:ID!){
+  task(id: $taskid){
+    id
+    name
+  }
+}
+----------------------------
+query getAllTasks{
+  tasks{
+    id
+    name
+    status
+  }
+}
+---------------------------
+query getAllQuotes{
+  quotes{
+    name
+    by
+  }
+}
+---------------------------
+mutation createUser($UserNew: UserInput!){
+  user:signupUserDummy(UserNew:$UserNew){
+  	id 
+  	email 
+  	firstName 
+  	lastName
+  }
+}

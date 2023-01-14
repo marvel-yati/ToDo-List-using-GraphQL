@@ -1,0 +1,1 @@
+export const MONGO_URI = "mongodb+srv://debayatisarkar:cI2Ty1yHOKIVgSkh@bookmanagement.6gwntxc.mongodb.net/ToDo"
